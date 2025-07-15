@@ -21,7 +21,7 @@ You will also need API credentials for:
   - **Reddit API**: To fetch user data.
   - **OpenRouter API**: To generate the persona.
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 Follow these steps to set up your environment and run the application.
 
@@ -110,7 +110,7 @@ OPENROUTER_ENDPOINT="https://openrouter.ai/api/v1/chat/completions"
     2.  Navigate to your account settings or keys page.
     3.  Generate a new API key.
 
-## 🚀 How to Execute the Script
+## How to Execute the Script
 
 Once you have completed the setup, you can run the script from your terminal.
 
@@ -136,6 +136,6 @@ The script will then:
 1.  Fetch the latest posts and comments for the specified user.
 2.  Send the content to the OpenRouter API for analysis.
 3.  Generate the persona.
-4.  Save the output to a file named `spez_persona.txt` in the same directory.
+4.  Save the output to a file named `spez_persona.txt` in personas directory.
 
 The terminal will display the progress, including fetching status and API responses. If successful, you will see a confirmation message indicating that the user persona has been saved.
