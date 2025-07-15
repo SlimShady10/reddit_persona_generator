@@ -195,8 +195,11 @@ Now here is the user's Reddit content:
 # Save User Persona as Text File
 
 def save_persona_to_file(username, persona_text):
-    """Saves the generated persona to a text file."""
-    filename = f"{username}_persona.txt"
+    """Saves the generated persona to a text file in the 'personas' directory."""
+    output_dir = os.path.join(os.path.dirname(__file__), "personas")
+    os.makedirs(output_dir, exist_ok=True)  # Create the directory if it doesn't exist
+
+    filename = os.path.join(output_dir, f"{username}_persona.txt")
     try:
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(persona_text)
